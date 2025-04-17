@@ -22,7 +22,7 @@
         <div class="footer-column">
             <h3>YOUR ACCOUNT</h3>
             <ul class="footer-links">
-                <li><a href="${pageContext.request.contextPath}/Pages/account.jsp">Sign Up</a></li>
+                <li><a href="${pageContext.request.contextPath}/Pages/account.jsp">Register</a></li>
                 <li><a href="${pageContext.request.contextPath}/Pages/account.jsp">Login</a></li>
                 <li><a href="${pageContext.request.contextPath}/Pages/cart.jsp">Cart</a></li>
                 <li><a href="${pageContext.request.contextPath}/Pages/shipping.jsp">Shipping</a></li>

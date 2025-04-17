@@ -7,7 +7,9 @@
   <link rel="stylesheet" href="${pageContext.request.contextPath}/CSS/footer.css" />
 </head>
 <body>
-  <%@ include file="header.jsp" %>
+  <jsp:include page="header.jsp">
+    <jsp:param name="activePage" value="home" />
+  </jsp:include>
 
   <main>
     <!-- Page-specific content here -->

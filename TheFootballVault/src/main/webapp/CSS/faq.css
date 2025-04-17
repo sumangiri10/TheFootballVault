@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/* Header Styles */
+.faq-header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.faq-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.breadcrumb {
+    color: #ecf0f1;
+}
+
+.breadcrumb a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+/* Main Content Styles */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.intro-text {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro-text h2 {
+    font-size: 2rem;
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+.intro-text p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.intro-text a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.intro-text a:hover {
+    text-decoration: underline;
+}
+
+/* FAQ List Styles */
+.faq-list {
+    margin-bottom: 40px;
+}
+
+.faq-item {
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.faq-question {
+    padding: 20px;
+    background-color: #dbeafe;
+    border-left: 5px solid #3b82f6;
+    cursor: pointer;
+}
+
+.faq-question h3 {
+    color: #1e3a8a;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.faq-answer {
+    padding: 20px;
+    background-color: white;
+    border-top: 1px solid #e5e7eb;
+}
+
+.faq-answer p {
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+/* Additional Help Section */
+.additional-help {
+    background-color: #eff6ff;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.additional-help h3 {
+    color: #1e3a8a;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.additional-help p {
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+.additional-help a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.additional-help a:hover {
+    text-decoration: underline;
+}
+
+.faq-item:nth-child(odd) .faq-question {
+    background-color: #dbeafe;
+    border-left: 5px solid #3b82f6;
+}
+
+.faq-item:nth-child(even) .faq-question {
+    background-color: #e0e7ff;
+    border-left: 5px solid #6366f1;
+}

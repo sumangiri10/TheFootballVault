@@ -9,6 +9,8 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
+    overflow-x: hidden;
+    min-height: 100vh;
 }
 
 a {
@@ -24,6 +26,7 @@ ul {
 header {
     width: 100%;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: visible;
 }
 
 /* Top header with logo, search, and icons */
@@ -36,6 +39,7 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     gap: 15px;
+    background-color: white; 
 }
 
 .logo {
@@ -140,7 +144,6 @@ header {
     justify-content: center;
 }
 
-/* Navigation Menu - Made sticky */
 .main-nav {
     background-color: #222;
     color: white;
@@ -148,13 +151,16 @@ header {
     top: 0;
     z-index: 1000;
     width: 100%;
+    display: block;
+    min-height: 50px;
 }
 
 .nav-menu {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     max-width: 1200px;
     margin: 0 auto;
+    white-space: nowrap;
 }
 
 .nav-item {
@@ -219,9 +225,19 @@ header {
     background-color: #333;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+
+/* Active link styling */
+.nav-link.active {
+    background-color:  #28A745;
+    color: white;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+/* Ensuring the main content has enough height for scrolling */
+main {
+    min-height: 100vh;
 }
