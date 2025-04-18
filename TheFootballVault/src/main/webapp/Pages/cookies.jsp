@@ -12,24 +12,23 @@
   <main>
     <!-- Page-specific content here -->
     <h1>Welcome to The Football Vault!</h1>
-    <p>This is Cookies Policy page.</p>
+    <p>Cookies Policy here..</p>
+     <h1>Welcome to The Football Vault!</h1>
+    <p>Cookies Policy here..</p>
     <h1>Welcome to The Football Vault!</h1>
-    <p>This is Cookies Policy page.</p>
+    <p>Cookies Policy here..</p>
     <h1>Welcome to The Football Vault!</h1>
-    <p>This is Cookies Policy page.</p>
+    <p>Cookies Policy here..</p>
     <h1>Welcome to The Football Vault!</h1>
-    <p>This is Cookies Policy page.</p>
+    <p>Cookies Policy here..</p>
     <h1>Welcome to The Football Vault!</h1>
-    <p>This is Cookies Policy page.</p>
+    <p>Cookies Policy here..</p>
     <h1>Welcome to The Football Vault!</h1>
-    <p>This is Cookies Policy page.</p>
+    <p>Cookies Policy here..</p>
     <h1>Welcome to The Football Vault!</h1>
-    <p>This is Cookies Policy page.</p>
+    <p>Cookies Policy here..</p>
     <h1>Welcome to The Football Vault!</h1>
-    <p>This is Cookies Policy page.</p>
-    <h1>Welcome to The Football Vault!</h1>
-    <p>This is Cookies Policy page.</p>
-
+    <p>Cookies Policy here..</p>
   </main>
 
   <%@ include file="footer.jsp" %>

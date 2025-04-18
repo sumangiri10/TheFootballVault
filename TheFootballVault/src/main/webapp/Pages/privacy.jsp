@@ -5,7 +5,7 @@
   <title>The Football Vault - Privacy Policy</title>
   <link rel="stylesheet" href="${pageContext.request.contextPath}/CSS/header.css" />
   <link rel="stylesheet" href="${pageContext.request.contextPath}/CSS/footer.css" />
-  <link rel="stylesheet" href="${pageContext.request.contextPath}/CSS/privacy.css" />
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/CSS/policy.css" />
 </head>
 <body>
   <%@ include file="header.jsp" %>
@@ -28,7 +28,7 @@
             
             <section class="policy-section">
                 <h2>1. Introduction</h2>
-                <p>The Football Vault ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or make a purchase.</p>
+                <p>The Football Vault is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or make a purchase.</p>
                 <p>Please read this Privacy Policy carefully. By accessing or using our website, you acknowledge that you have read, understood, and agree to be bound by all the terms of this Privacy Policy.</p>
             </section>
             
@@ -113,13 +113,8 @@
             </section>
             
             <section class="policy-section">
-                <h2>8. Contact Us</h2>
-                <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-                <p class="contact-info">
-                    Email: thefootballvault@gmail.com<br>
-                    Phone: +977 9827361204, +977 9864244422<br>
-                    Address: Ranjana Galli, New Road, Kathmandu 44600, Nepal
-                </p>
+                <h2>11. Contact Us</h2>
+                <p>If you have any questions about these Terms of Use, please visit our <a href="${pageContext.request.contextPath}/Pages/contact.jsp">Contact Us</a> page for all our contact details and a message form.</p>
             </section>
         </div>
     </div>
