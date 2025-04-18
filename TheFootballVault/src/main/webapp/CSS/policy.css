@@ -21,10 +21,6 @@
     text-decoration: none;
 }
 
-.breadcrumb a:hover {
-    text-decoration: underline;
-}
-
 /* Main Content Styles */
 .container {
     max-width: 900px;
@@ -99,10 +95,6 @@ li {
 a {
     color: #957b47;
     text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 .policy-section a {

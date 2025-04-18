@@ -113,7 +113,7 @@
             </section>
             
             <section class="policy-section">
-                <h2>11. Contact Us</h2>
+                <h2>8. Contact Us</h2>
                 <p>If you have any questions about these Terms of Use, please visit our <a href="${pageContext.request.contextPath}/Pages/contact.jsp">Contact Us</a> page for all our contact details and a message form.</p>
             </section>
         </div>
