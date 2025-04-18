@@ -40,7 +40,7 @@
         <div class="footer-column">
             <h3>ABOUT US</h3>
             <ul class="footer-links">
-                <li><a href="${pageContext.request.contextPath}/Pages/about.jsp">About Team</a></li>
+                <li><a href="${pageContext.request.contextPath}/Pages/about.jsp">About</a></li>
             </ul>
         </div>
 
