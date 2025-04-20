@@ -51,7 +51,7 @@
         <!-- Why Choose Us Section -->
         <section class="about-section choose-section">
             <div class="section-content">
-                <h2>Why Choose Us</h2>
+                <h2>Why Choose Us?</h2>
                 <ul class="features-list">
                     <li>
                         <h3>100% Authentic Products</h3>
@@ -59,7 +59,7 @@
                     </li>
                     <li>
                         <h3>Nationwide Delivery</h3>
-                        <p>We deliver to all 77 districts across Nepal with free shipping on orders over Rs.2000.</p>
+                        <p>We deliver to all 77 districts across Nepal with free shipping on orders over Rs.3000.</p>
                     </li>
                     <li>
                         <h3>Personalization</h3>

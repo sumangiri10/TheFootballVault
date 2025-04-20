@@ -26,7 +26,7 @@
           </div>
           <div class="feature-content">
             <h3>Free Shipping</h3>
-            <p>On all orders over Rs.2000</p>
+            <p>On all orders over Rs.3000</p>
           </div>
         </div>
         

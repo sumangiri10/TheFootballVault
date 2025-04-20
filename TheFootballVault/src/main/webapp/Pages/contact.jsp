@@ -75,7 +75,7 @@
                 
                 <div class="business-hours">
                     <h4>Business Hours</h4>
-                    <p>Sunday - Friday: 9:00 AM - 6:00 PM</p>
+                    <p>Sunday - Friday: 10:00 AM - 6:00 PM</p>
                     <p>Saturday: Closed</p>
                 </div>
                 

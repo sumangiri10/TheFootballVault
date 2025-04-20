@@ -104,7 +104,7 @@
 
 <!-- Announcement Bar -->
 <div class="announcement-bar">
-    <p>Enjoy free shipping all across Nepal on orders over Rs.2000 | Cash on Delivery available nationwide!</p>
+    <p>Enjoy free shipping all across Nepal on orders over Rs.3000 | Cash on Delivery available nationwide!</p>
 </div>
 </body>
 </html>

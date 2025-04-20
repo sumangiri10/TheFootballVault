@@ -60,7 +60,7 @@
             <section class="policy-section">
                 <h2>5. Shipping and Delivery</h2>
                 <p>We ship to all locations within Nepal. Standard delivery typically takes 3-5 business days, depending on your location.</p>
-                <p>Free shipping is available for orders over Rs.2000. For orders below this amount, shipping charges will be calculated at checkout.</p>
+                <p>Free shipping is available for orders over Rs.3000. For orders below this amount, shipping charges will be calculated at checkout.</p>
                 <p>We are not responsible for delays caused by customs, natural disasters, or other circumstances beyond our control.</p>
             </section>
             
