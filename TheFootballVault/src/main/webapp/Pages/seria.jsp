@@ -13,10 +13,10 @@
  
     <div class="page-header">
         <div class="container">
-            <h1 class="page-title">Serie A Jersey</h1>
+            <h1 class="page-title">Serie A Jerseys</h1>
             <div class="breadcrumb">
                 <a href="${pageContext.request.contextPath}/Pages/home.jsp">Home</a> >
-                <a href="${pageContext.request.contextPath}/Pages/football.jsp">Football Jerseys</a> > Serie A Jersey
+                <a href="${pageContext.request.contextPath}/Pages/football.jsp">Football Jerseys</a> > Serie A Jerseys
             </div>
         </div>
     </div>
