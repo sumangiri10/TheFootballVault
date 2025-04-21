@@ -59,7 +59,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="${pageContext.request.contextPath}/Pages/admin/settings.jsp">
+                    <a href="${pageContext.request.contextPath}/Pages/admin/setting.jsp">
                         <i class="fas fa-cog"></i>
                         <span>Settings</span>
                     </a>
