@@ -8,7 +8,9 @@
   <link rel="stylesheet" href="${pageContext.request.contextPath}/CSS/account.css" />
 </head>
 <body>
-  <%@ include file="header.jsp" %>
+  <jsp:include page="header.jsp">
+    <jsp:param name="activePage" value="sign" />
+  </jsp:include>
 
   <main>
     <!-- Header Section -->
@@ -37,7 +39,6 @@
                 
                 <button type="submit" class="btn">LOG IN</button>
                 
-                <a href="${pageContext.request.contextPath}/Pages/admin.jsp" class="admin-login">Login as admin</a>
             </form>
         </div>
         

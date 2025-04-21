@@ -14,7 +14,6 @@
                 <li><a href="${pageContext.request.contextPath}/Pages/football.jsp">Football Jerseys</a></li>
                 <li><a href="${pageContext.request.contextPath}/Pages/kids.jsp">Kids Jerseys</a></li>
                 <li><a href="${pageContext.request.contextPath}/Pages/retrojersey.jsp">Retro Jerseys</a></li>
-                <li><a href="${pageContext.request.contextPath}/Pages/international.jsp">International Jerseys</a></li>
                 <li><a href="${pageContext.request.contextPath}/Pages/boots.jsp">Boots</a></li>
             </ul>
         </div>

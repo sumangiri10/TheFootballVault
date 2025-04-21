@@ -80,17 +80,6 @@
             </ul>
         </li>
         <li class="nav-item dropdown">
-            <a href="${pageContext.request.contextPath}/Pages/international.jsp" class="nav-link ${param.activePage == 'international' ? 'active' : ''}">
-                International Jerseys
-                <img src="${pageContext.request.contextPath}/Images/menu.png" alt="Expand" class="dropdown-icon">
-            </a>
-            <ul class="dropdown-menu">
-                <li><a href="${pageContext.request.contextPath}/Pages/europe.jsp">Europe</a></li>
-                <li><a href="${pageContext.request.contextPath}/Pages/southamerica.jsp">South America</a></li>
-                <li><a href="${pageContext.request.contextPath}/Pages/asias.jsp">Asia</a></li>
-            </ul>
-        </li>
-        <li class="nav-item">
             <a href="${pageContext.request.contextPath}/Pages/boots.jsp" class="nav-link ${param.activePage == 'boots' ? 'active' : ''}">Boots</a>
         </li>
         <li class="nav-item">
@@ -98,6 +87,9 @@
         </li>
         <li class="nav-item">
             <a href="${pageContext.request.contextPath}/Pages/about.jsp" class="nav-link ${param.activePage == 'about' ? 'active' : ''}">About Us</a>
+        </li>
+        <li class="nav-item">
+            <a href="${pageContext.request.contextPath}/Pages/account.jsp" class="nav-link ${param.activePage == 'sign' ? 'active' : ''}">Sign In</a>
         </li>
     </ul>
 </nav>
