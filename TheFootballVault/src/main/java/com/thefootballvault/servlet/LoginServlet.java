@@ -9,6 +9,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
+import jakarta.servlet.http.Cookie;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -48,16 +49,24 @@ public class LoginServlet extends HttpServlet {
                 customer.setEmail(rs.getString("Email"));
                 customer.setRole(rs.getString("Role"));
 
-                HttpSession session = req.getSession();
+                // Start a session and store customer data
+                HttpSession session = req.getSession(true); 
                 session.setAttribute("customer", customer);
-                session.setMaxInactiveInterval(5 * 60); 
+                session.setMaxInactiveInterval(30 * 60); 
 
-                // Redirect based on role
-                if ("admin".equals(customer.getRole())) {
-                    resp.sendRedirect("Pages/admin/admin.jsp");
-                } else {
-                    resp.sendRedirect("Pages/user-dashboard.jsp");
-                }
+                // Log customer details for debugging
+                System.out.println("LoginServlet: Customer set in session - ID: " + customer.getCustomerId() + ", Role: " + customer.getRole());
+
+                // Create a custom cookie for username display 
+                String username = customer.getUsername();
+                Cookie userCookie = new Cookie("fvUser", username);
+                userCookie.setHttpOnly(true);          
+                userCookie.setSecure(false);            
+                resp.addCookie(userCookie);             
+
+                // Always redirect to cookie consent page on login
+                System.out.println("LoginServlet: Redirecting to cookie-consent.jsp for consent");
+                resp.sendRedirect(req.getContextPath() + "/Pages/cookie-consent.jsp");
             } else {
                 // Failed login
                 req.setAttribute("errorMessage", "Invalid username/email or password");

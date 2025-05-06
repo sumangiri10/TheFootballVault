@@ -59,7 +59,7 @@ public class RegisterServlet extends HttpServlet {
             int rows = ps.executeUpdate();
 
             if (rows > 0) {
-                resp.sendRedirect(req.getContextPath() + "/Pages/account.jsp"); // Fixed redirect
+                resp.sendRedirect(req.getContextPath() + "/Pages/account.jsp"); 
             } else {
                 req.setAttribute("registerError", "Registration failed");
                 req.getRequestDispatcher("Pages/account.jsp").forward(req, resp);

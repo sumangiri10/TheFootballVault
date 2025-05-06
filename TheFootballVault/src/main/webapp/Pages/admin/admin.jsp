@@ -67,7 +67,7 @@
             </ul>
             
             <div class="sidebar-footer">
-                <a href="login.html" class="logout-btn">
+                <a href="${pageContext.request.contextPath}/logout" class="logout-btn">
                     <i class="fas fa-sign-out-alt"></i>
                     <span>Logout</span>
                 </a>
