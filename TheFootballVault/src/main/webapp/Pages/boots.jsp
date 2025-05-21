@@ -33,8 +33,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Nivia Airstrike Football Shoes</h3>
                         <div class="product-price">Rs. 2800</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
-                            <input type="hidden" name="productId" value="1"/>
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
+                            <input type="hidden" name="productId" value="81"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -57,8 +58,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Nivia Ditmar 2.0 Football Boots</h3>
                         <div class="product-price">Rs. 3000</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
-                            <input type="hidden" name="productId" value="2"/>
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
+                            <input type="hidden" name="productId" value="82"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -82,8 +84,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Nivia Dominator Football Shoes</h3>
                         <div class="product-price">Rs. 2000</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
-                            <input type="hidden" name="productId" value="3"/>
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
+                            <input type="hidden" name="productId" value="83"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -107,8 +110,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Vector X Turbo X Football Boots</h3>
                         <div class="product-price">Rs. 2400</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
-                            <input type="hidden" name="productId" value="4"/>
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
+                            <input type="hidden" name="productId" value="84"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -131,8 +135,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Vector X Velocity Football Shoes</h3>
                         <div class="product-price">Rs. 3050</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
-                            <input type="hidden" name="productId" value="5"/>
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
+                            <input type="hidden" name="productId" value="85"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -155,8 +160,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Vector X Royale+ Football Boots</h3>
                         <div class="product-price">Rs. 3200</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
-                            <input type="hidden" name="productId" value="6"/>
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
+                            <input type="hidden" name="productId" value="86"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -179,8 +185,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Vector X Nitro X Kids Football Boots</h3>
                         <div class="product-price">Rs. 1990</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
-                            <input type="hidden" name="productId" value="7"/>
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
+                            <input type="hidden" name="productId" value="87"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -203,8 +210,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Football Shoes For Mens</h3>
                         <div class="product-price">Rs. 3000</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
-                            <input type="hidden" name="productId" value="8"/>
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
+                            <input type="hidden" name="productId" value="88"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -227,8 +235,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Men Soccer Shoes Grass Training Cleats Footwear</h3>
                         <div class="product-price">Rs. 2600</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
-                            <input type="hidden" name="productId" value="9"/>
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
+                            <input type="hidden" name="productId" value="89"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -251,8 +260,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Football Boots Vector X Electra</h3>
                         <div class="product-price">Rs. 1050</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
-                            <input type="hidden" name="productId" value="10"/>
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
+                            <input type="hidden" name="productId" value="90"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -275,8 +285,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Anza Futsal Boots for Boys</h3>
                         <div class="product-price">Rs. 2100</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
-                            <input type="hidden" name="productId" value="11"/>
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
+                            <input type="hidden" name="productId" value="91"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -299,8 +310,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Sneakers Cleats Futsal Football Boots</h3>
                         <div class="product-price">Rs. 2200</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
-                            <input type="hidden" name="productId" value="12"/>
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
+                            <input type="hidden" name="productId" value="92"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>

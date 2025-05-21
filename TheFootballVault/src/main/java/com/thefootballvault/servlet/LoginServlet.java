@@ -34,7 +34,7 @@ public class LoginServlet extends HttpServlet {
 
         try (Connection conn = DBConnection.getDbConnection();
              PreparedStatement ps = conn.prepareStatement(
-                 "SELECT Customer_ID, Full_Name, Email, Role FROM Customer " +
+                 "SELECT Customer_ID, Full_Name, Email, Contact_Number, Address, Role FROM Customer " +
                  "WHERE (Email = ? OR Full_Name = ?) AND Customer_Pass = ?")) {
             ps.setString(1, usernameOrEmail);
             ps.setString(2, usernameOrEmail);
@@ -43,11 +43,14 @@ public class LoginServlet extends HttpServlet {
 
             if (rs.next()) {
                 // Successful login
-                Customer customer = new Customer();
-                customer.setCustomerId(rs.getInt("Customer_ID"));
-                customer.setUsername(rs.getString("Full_Name"));
-                customer.setEmail(rs.getString("Email"));
-                customer.setRole(rs.getString("Role"));
+                Customer customer = new Customer(
+                    rs.getInt("Customer_ID"),
+                    rs.getString("Full_Name"),
+                    rs.getString("Email"),
+                    rs.getString("Contact_Number"),
+                    rs.getString("Address"),
+                    rs.getString("Role")
+                );
 
                 // Start a session and store customer data
                 HttpSession session = req.getSession(true); 
@@ -57,16 +60,20 @@ public class LoginServlet extends HttpServlet {
                 // Log customer details for debugging
                 System.out.println("LoginServlet: Customer set in session - ID: " + customer.getCustomerId() + ", Role: " + customer.getRole());
 
-                // Create a custom cookie for username display 
-                String username = customer.getUsername();
-                Cookie userCookie = new Cookie("fvUser", username);
+                // Create a custom cookie using email for uniqueness
+                String userIdentifier = customer.getEmail();
+                Cookie userCookie = new Cookie("fvUser", userIdentifier);
                 userCookie.setHttpOnly(true);          
                 userCookie.setSecure(false);            
                 resp.addCookie(userCookie);             
 
-                // Always redirect to cookie consent page on login
-                System.out.println("LoginServlet: Redirecting to cookie-consent.jsp for consent");
-                resp.sendRedirect(req.getContextPath() + "/Pages/cookie-consent.jsp");
+                // Redirect based on role
+                String role = customer.getRole();
+                if ("admin".equalsIgnoreCase(role)) {
+                    resp.sendRedirect(req.getContextPath() + "/Pages/admin/admin.jsp");
+                } else {
+                    resp.sendRedirect(req.getContextPath() + "/Pages/user-dashboard.jsp");
+                }
             } else {
                 // Failed login
                 req.setAttribute("errorMessage", "Invalid username/email or password");

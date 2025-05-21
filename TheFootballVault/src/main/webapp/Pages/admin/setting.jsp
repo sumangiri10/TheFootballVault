@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Settings - The Football Vault Admin</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/CSS/admin.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 <body>
     <div class="admin-container">
@@ -35,7 +36,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="${pageContext.request.contextPath}/Pages/admin/products.jsp">
+                    <a href="${pageContext.request.contextPath}/Pages/admin/product.jsp">
                         <i class="fas fa-tshirt"></i>
                         <span>Products</span>
                     </a>
@@ -44,12 +45,6 @@
                     <a href="${pageContext.request.contextPath}/Pages/admin/orders.jsp">
                         <i class="fas fa-shopping-cart"></i>
                         <span>Orders</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="${pageContext.request.contextPath}/Pages/admin/users.jsp">
-                        <i class="fas fa-users"></i>
-                        <span>Users</span>
                     </a>
                 </li>
                 <li>
@@ -67,7 +62,7 @@
             </ul>
             
             <div class="sidebar-footer">
-                <a href="${pageContext.request.contextPath}/Pages/acount.jsp" class="logout-btn">
+                <a href="${pageContext.request.contextPath}/Pages/account.jsp" class="logout-btn">
                     <i class="fas fa-sign-out-alt"></i>
                     <span>Logout</span>
                 </a>
@@ -95,19 +90,19 @@
                             </div>
                             <div class="form-group">
                                 <label for="store-email">Contact Email</label>
-                                <input type="email" id="store-email" class="form-control" value="contact@footballvault.com">
+                                <input type="email" id="store-email" class="form-control" value="thefootballvault@gmail.com">
                             </div>
                         </div>
                         
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="store-phone">Contact Phone</label>
-                                <input type="text" id="store-phone" class="form-control" value="+91 9876543210">
+                                <input type="text" id="store-phone" class="form-control" value="+977 9827361204">
                             </div>
                             <div class="form-group">
                                 <label for="store-currency">Default Currency</label>
                                 <select id="store-currency" class="form-select">
-                                    <option value="INR" selected>Indian Rupee (₹)</option>
+                                    <option value="INR" selected>Nepali Rupee (₹)</option>
                                     <option value="USD">US Dollar ($)</option>
                                     <option value="EUR">Euro (€)</option>
                                     <option value="GBP">British Pound (£)</option>
@@ -117,7 +112,7 @@
                         
                         <div class="form-group">
                             <label for="store-address">Store Address</label>
-                            <textarea id="store-address" class="form-control" rows="3">123 Main Street, Mumbai, Maharashtra 400001, India</textarea>
+                            <textarea id="store-address" class="form-control" rows="3">Ranjana Galli, New Road, Kathmandu 44600, Nepal</textarea>
                         </div>
                         
                         <div class="form-actions">
@@ -133,10 +128,10 @@
                         <div class="form-group">
                             <label for="payment-gateway">Default Payment Gateway</label>
                             <select id="payment-gateway" class="form-select">
-                                <option value="razorpay" selected>Razorpay</option>
-                                <option value="paytm">Paytm</option>
-                                <option value="paypal">PayPal</option>
-                                <option value="stripe">Stripe</option>
+                                <option value="cod" selected>Cah On Delivery</option>
+                                <option value="esewa">Esewa</option>
+                                <option value="khalti">Khalti</option>
+                                <option value="fonepay">Fone Pay</option>
                             </select>
                         </div>
                         
@@ -187,11 +182,11 @@
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="shipping-cost">Flat Rate Cost (₹)</label>
-                                <input type="text" id="shipping-cost" class="form-control" value="100">
+                                <input type="text" id="shipping-cost" class="form-control" value="50">
                             </div>
                             <div class="form-group">
                                 <label for="free-shipping-threshold">Free Shipping Threshold (₹)</label>
-                                <input type="text" id="free-shipping-threshold" class="form-control" value="2000">
+                                <input type="text" id="free-shipping-threshold" class="form-control" value="3000">
                             </div>
                         </div>
                         
@@ -200,19 +195,19 @@
                             <div style="display: flex; gap: 15px; margin-top: 10px;">
                                 <div style="display: flex; align-items: center;">
                                     <input type="checkbox" id="region-north" style="margin-right: 5px;" checked>
-                                    <label for="region-north">North India</label>
+                                    <label for="region-north">Northern Nepal</label>
                                 </div>
                                 <div style="display: flex; align-items: center;">
                                     <input type="checkbox" id="region-south" style="margin-right: 5px;" checked>
-                                    <label for="region-south">South India</label>
+                                    <label for="region-south">Southern Nepal</label>
                                 </div>
                                 <div style="display: flex; align-items: center;">
                                     <input type="checkbox" id="region-east" style="margin-right: 5px;" checked>
-                                    <label for="region-east">East India</label>
+                                    <label for="region-east">Eastern Nepal</label>
                                 </div>
                                 <div style="display: flex; align-items: center;">
                                     <input type="checkbox" id="region-west" style="margin-right: 5px;" checked>
-                                    <label for="region-west">West India</label>
+                                    <label for="region-west">West Nepal</label>
                                 </div>
                             </div>
                         </div>

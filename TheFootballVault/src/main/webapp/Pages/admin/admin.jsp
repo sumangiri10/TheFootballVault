@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - The Football Vault Admin</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/CSS/admin.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 <body>
     <div class="admin-container">
@@ -41,19 +42,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="${pageContext.request.contextPath}/Pages/orders.jsp">
+                    <a href="${pageContext.request.contextPath}/Pages/admin/orders.jsp">
                         <i class="fas fa-shopping-cart"></i>
                         <span>Orders</span>
                     </a>
                 </li>
                 <li>
-                    <a href="${pageContext.request.contextPath}/Pages/admin/users.jsp">
-                        <i class="fas fa-users"></i>
-                        <span>Users</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="${pageContext.request.contextPath}/Pages/admin/reports.jspl">
+                    <a href="${pageContext.request.contextPath}/Pages/admin/reports.jsp">
                         <i class="fas fa-chart-bar"></i>
                         <span>Reports</span>
                     </a>
@@ -135,7 +130,7 @@
                 <div class="dashboard-card recent-orders">
                     <div class="card-header">
                         <h2>Recent Orders</h2>
-                        <a href="orders.html" class="view-all">View All</a>
+                        <a href="orders.jsp" class="view-all">View All</a>
                     </div>
                     <div class="card-content">
                         <table class="data-table">
@@ -151,36 +146,36 @@
                             <tbody>
                                 <tr>
                                     <td>#ORD-5678</td>
-                                    <td>Rahul Sharma</td>
-                                    <td>21 Apr, 2025</td>
+                                    <td>Rahul Giri</td>
+                                    <td>21 May, 2025</td>
                                     <td><span class="status-badge pending">Pending</span></td>
                                     <td>₹1,500</td>
                                 </tr>
                                 <tr>
                                     <td>#ORD-5677</td>
-                                    <td>Priya Patel</td>
-                                    <td>21 Apr, 2025</td>
+                                    <td>Priya Karki</td>
+                                    <td>21 May, 2025</td>
                                     <td><span class="status-badge shipped">Shipped</span></td>
                                     <td>₹3,000</td>
                                 </tr>
                                 <tr>
                                     <td>#ORD-5676</td>
-                                    <td>Amit Kumar</td>
-                                    <td>20 Apr, 2025</td>
+                                    <td>Amit Prasad</td>
+                                    <td>20 May, 2025</td>
                                     <td><span class="status-badge delivered">Delivered</span></td>
                                     <td>₹1,500</td>
                                 </tr>
                                 <tr>
                                     <td>#ORD-5675</td>
-                                    <td>Neha Singh</td>
-                                    <td>20 Apr, 2025</td>
+                                    <td>Neha Maharjan</td>
+                                    <td>20 May, 2025</td>
                                     <td><span class="status-badge shipped">Shipped</span></td>
                                     <td>₹4,500</td>
                                 </tr>
                                 <tr>
                                     <td>#ORD-5674</td>
                                     <td>Vikram Joshi</td>
-                                    <td>19 Apr, 2025</td>
+                                    <td>19 May, 2025</td>
                                     <td><span class="status-badge delivered">Delivered</span></td>
                                     <td>₹1,500</td>
                                 </tr>
@@ -192,39 +187,39 @@
                 <div class="dashboard-card low-stock">
                     <div class="card-header">
                         <h2>Low Stock Products</h2>
-                        <a href="products.html" class="view-all">View All</a>
+                        <a href="product.jsp" class="view-all">View All</a>
                     </div>
                     <div class="card-content">
                         <ul class="low-stock-list">
                             <li>
                                 <div class="product-info">
-                                    <img src="/placeholder.svg?height=40&width=40" alt="Manchester United Home Jersey">
+                                    <img src="${pageContext.request.contextPath}/Images/pl/united-away.jpg" alt="Manchester United Home Jersey">
                                     <div>
-                                        <h4>Manchester United Home Jersey 2024/25</h4>
+                                        <h4>Manchester United Away Jersey 2024/25</h4>
                                         <p>Size: L - Only 2 left</p>
                                     </div>
                                 </div>
-                                <a href="products.html" class="restock-btn">Restock</a>
+                                <a href="product.jsp" class="restock-btn">Restock</a>
                             </li>
                             <li>
                                 <div class="product-info">
-                                    <img src="/placeholder.svg?height=40&width=40" alt="Arsenal Away Jersey">
+                                    <img src="${pageContext.request.contextPath}/Images/pl/arsenal-home.jpg" alt="Arsenal Away Jersey">
                                     <div>
-                                        <h4>Arsenal Away Jersey 2024/25</h4>
+                                        <h4>Arsenal Home Jersey 2024/25</h4>
                                         <p>Size: XL - Only 3 left</p>
                                     </div>
                                 </div>
-                                <a href="products.html" class="restock-btn">Restock</a>
+                                <a href="product.jsp" class="restock-btn">Restock</a>
                             </li>
                             <li>
                                 <div class="product-info">
-                                    <img src="/placeholder.svg?height=40&width=40" alt="Barcelona Home Jersey">
+                                    <img src="${pageContext.request.contextPath}/Images/laliga/barca-home.jpg" alt="Barcelona Home Jersey">
                                     <div>
                                         <h4>Barcelona Home Jersey 2024/25</h4>
                                         <p>Size: M - Only 1 left</p>
                                     </div>
                                 </div>
-                                <a href="products.html" class="restock-btn">Restock</a>
+                                <a href="product.jsp" class="restock-btn">Restock</a>
                             </li>
                         </ul>
                     </div>
@@ -315,7 +310,7 @@
                             <div class="category-item">
                                 <div class="category-color" style="background-color: #1cc88a;"></div>
                                 <div class="category-info">
-                                    <h4>Football Boots</h4>
+                                    <h4>Retro Jersey</h4>
                                     <div class="progress-bar">
                                         <div class="progress" style="width: 30%; background-color: #1cc88a;"></div>
                                     </div>
@@ -325,7 +320,7 @@
                             <div class="category-item">
                                 <div class="category-color" style="background-color: #36b9cc;"></div>
                                 <div class="category-info">
-                                    <h4>Training Gear</h4>
+                                    <h4>Kids Jersey</h4>
                                     <div class="progress-bar">
                                         <div class="progress" style="width: 15%; background-color: #36b9cc;"></div>
                                     </div>
@@ -335,7 +330,7 @@
                             <div class="category-item">
                                 <div class="category-color" style="background-color: #f6c23e;"></div>
                                 <div class="category-info">
-                                    <h4>Accessories</h4>
+                                    <h4>Football Boots</h4>
                                     <div class="progress-bar">
                                         <div class="progress" style="width: 10%; background-color: #f6c23e;"></div>
                                     </div>

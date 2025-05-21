@@ -338,30 +338,35 @@ body {
     color: #fff;
 }
 
-/* Action Buttons */
+/* generic reset for action buttons */
 .action-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 28px;
-    height: 28px;
-    border-radius: 4px;
-    margin-right: 5px;
-    color: white;
-    text-decoration: none;
-}
-
-.view-btn {
-    background-color: #4e73df;
+  display: inline-block;
+  padding: 0.25em 0.6em;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  transition: background-color 0.2s;
 }
 
 .edit-btn {
-    background-color: #1cc88a;
+  color: #2a7f2a;
+  border-color: #2a7f2a;
+  background-color: transparent;
+}
+.edit-btn:hover {
+  background-color: rgba(42,127,42,0.1);
 }
 
 .delete-btn {
-    background-color: #e74a3b;
+  color: #c12a2a;
+  border-color: #c12a2a;
+  background-color: transparent;
 }
+.delete-btn:hover {
+  background-color: rgba(193,42,42,0.1);
+}
+
 
 /* Low Stock List */
 .low-stock-list {

@@ -22,30 +22,22 @@
         </div>
         <div class="header-icons">
             <div class="icon-container">
-                <a href="${pageContext.request.contextPath}/Pages/cart.jsp" class="icon-link">
+                <a href="${pageContext.request.contextPath}/addToCart" class="icon-link">
                     <span class="icon-badge">
                         <img src="${pageContext.request.contextPath}/Images/cart.png" alt="Cart" class="icon-img">
                     </span>
                 </a>
             </div>
             <div class="icon-container">
-                <a href="${pageContext.request.contextPath}/Pages/account.jsp" class="icon-link">
+                <a href="${pageContext.request.contextPath}/dashboard" class="icon-link">
                     <span class="icon-badge">
                     <img src="${pageContext.request.contextPath}/Images/account.png" alt="Account" class="icon-img">
-                    </span>
-                </a>
-            </div>
-            <div class="icon-container">
-                <a href="${pageContext.request.contextPath}/Pages/shipping.jsp" class="icon-link">
-                    <span class="icon-badge">
-                    <img src="${pageContext.request.contextPath}/Images/shipping.png" alt="Shipping" class="icon-img">
                     </span>
                 </a>
             </div>
         </div>
     </div>
 </header>
-
 <!-- Navigation Menu -->
 <nav class="main-nav" id="mainNav">
     <ul class="nav-menu">

@@ -49,8 +49,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Manchester City Home Jersey 2024/25</h3>
                         <div class="product-price">Rs. 1600</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
                             <input type="hidden" name="productId" value="21"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -74,8 +75,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Arsenal Home Jersey 2024/25</h3>
                         <div class="product-price">Rs. 1600</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
                             <input type="hidden" name="productId" value="22"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -99,8 +101,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Liverpool Home Jersey 2024/25</h3>
                         <div class="product-price">Rs. 1600</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
                             <input type="hidden" name="productId" value="23"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -124,8 +127,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Manchester United Home Jersey 2024/25</h3>
                         <div class="product-price">Rs. 1600</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
                             <input type="hidden" name="productId" value="24"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -148,8 +152,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Chelsea Home Jersey 2024/25</h3>
                         <div class="product-price">Rs. 1550</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
                             <input type="hidden" name="productId" value="25"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -172,8 +177,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Tottenham Hotspur Home Jersey 2024/25</h3>
                         <div class="product-price">Rs. 1550</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
                             <input type="hidden" name="productId" value="26"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -196,8 +202,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Newcastle United Home Jersey 2024/25</h3>
                         <div class="product-price">Rs. 1500</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
                             <input type="hidden" name="productId" value="27"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -220,8 +227,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Aston Villa Home Jersey 2024/25</h3>
                         <div class="product-price">Rs. 1500</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
                             <input type="hidden" name="productId" value="28"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -244,8 +252,9 @@
                     <div class="product-info">
                         <h3 class="product-name">West Ham United Home Jersey 2024/25</h3>
                         <div class="product-price">Rs. 1500</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
                             <input type="hidden" name="productId" value="29"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -268,8 +277,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Brighton Home Jersey 2024/25</h3>
                         <div class="product-price">Rs. 1500</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
                             <input type="hidden" name="productId" value="30"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -293,8 +303,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Liverpool Away Jersey 2024/25</h3>
                         <div class="product-price">Rs. 1550</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
                             <input type="hidden" name="productId" value="31"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -318,8 +329,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Manchester United Away Jersey 2024/25</h3>
                         <div class="product-price">Rs. 1550</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
                             <input type="hidden" name="productId" value="32"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -333,6 +345,8 @@
                         </form>
                     </div>
                 </div>
+            </div>
+        </div>
     </section>
 
     <div class="pagination">

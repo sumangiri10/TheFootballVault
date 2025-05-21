@@ -10,7 +10,7 @@
 </head>
 <body>
  <%@ include file="header.jsp" %>
- 
+
     <div class="page-header">
         <div class="container">
             <h1 class="page-title">La Liga Jerseys</h1>
@@ -49,8 +49,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Real Madrid Home Jersey 2024/25</h3>
                         <div class="product-price">Rs. 1700</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
-                            <input type="hidden" name="productId" value="41"/>
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
+                            <input type="hidden" name="productId" value="33"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -74,8 +75,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Barcelona Home Jersey 2024/25</h3>
                         <div class="product-price">Rs. 1800</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
-                            <input type="hidden" name="productId" value="42"/>
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
+                            <input type="hidden" name="productId" value="34"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -99,8 +101,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Atletico Madrid Home Jersey 2024/25</h3>
                         <div class="product-price">Rs. 1500</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
-                            <input type="hidden" name="productId" value="43"/>
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
+                            <input type="hidden" name="productId" value="35"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -123,8 +126,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Sevilla Home Jersey 2024/25</h3>
                         <div class="product-price">Rs. 1500</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
-                            <input type="hidden" name="productId" value="44"/>
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
+                            <input type="hidden" name="productId" value="36"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -147,8 +151,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Valencia Home Jersey 2024/25</h3>
                         <div class="product-price">Rs. 1500</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
-                            <input type="hidden" name="productId" value="45"/>
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
+                            <input type="hidden" name="productId" value="37"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -171,8 +176,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Villarreal Home Jersey 2024/25</h3>
                         <div class="product-price">Rs. 1500</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
-                            <input type="hidden" name="productId" value="46"/>
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
+                            <input type="hidden" name="productId" value="38"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -195,8 +201,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Real Betis Home Jersey 2024/25</h3>
                         <div class="product-price">Rs. 1500</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
-                            <input type="hidden" name="productId" value="47"/>
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
+                            <input type="hidden" name="productId" value="39"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -219,8 +226,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Real Sociedad Home Jersey 2024/25</h3>
                         <div class="product-price">Rs. 1500</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
-                            <input type="hidden" name="productId" value="48"/>
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
+                            <input type="hidden" name="productId" value="40"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -243,8 +251,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Athletic Bilbao Home Jersey 2024/25</h3>
                         <div class="product-price">Rs. 1500</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
-                            <input type="hidden" name="productId" value="49"/>
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
+                            <input type="hidden" name="productId" value="41"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -267,8 +276,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Celta Vigo Home Jersey 2024/25</h3>
                         <div class="product-price">Rs. 1500</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
-                            <input type="hidden" name="productId" value="50"/>
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
+                            <input type="hidden" name="productId" value="42"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -292,8 +302,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Real Madrid Away Jersey 2024/25</h3>
                         <div class="product-price">Rs. 1600</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
-                            <input type="hidden" name="productId" value="51"/>
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
+                            <input type="hidden" name="productId" value="43"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -317,8 +328,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Barcelona Away Jersey 2024/25</h3>
                         <div class="product-price">Rs. 2000</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
-                            <input type="hidden" name="productId" value="52"/>
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
+                            <input type="hidden" name="productId" value="44"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -332,6 +344,8 @@
                         </form>
                     </div>
                 </div>
+            </div>
+        </div>
     </section>
 
     <div class="pagination">

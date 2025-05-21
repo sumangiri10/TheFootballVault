@@ -47,8 +47,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Tottenham Hotspur Retro 1991 Home</h3>
                         <div class="product-price">Rs. 1550</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
-                            <input type="hidden" name="productId" value="1"/>
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
+                            <input type="hidden" name="productId" value="69"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -71,8 +72,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Manchester City Retro 1990 Away</h3>
                         <div class="product-price">Rs. 1550</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
-                            <input type="hidden" name="productId" value="2"/>
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
+                            <input type="hidden" name="productId" value="70"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -96,8 +98,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Barcelona Retro 1999 Home</h3>
                         <div class="product-price">Rs. 1800</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
-                            <input type="hidden" name="productId" value="3"/>
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
+                            <input type="hidden" name="productId" value="71"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -120,8 +123,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Liverpool Retro 1995 Away</h3>
                         <div class="product-price">Rs. 1650</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
-                            <input type="hidden" name="productId" value="8"/>
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
+                            <input type="hidden" name="productId" value="76"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -144,8 +148,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Inter Milan Retro 1998 Home</h3>
                         <div class="product-price">Rs. 1650</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
-                            <input type="hidden" name="productId" value="10"/>
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
+                            <input type="hidden" name="productId" value="78"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -168,8 +173,9 @@
                     <div class="product-info">
                         <h3 class="product-name">Arsenal Retro 1995 Away</h3>
                         <div class="product-price">Rs. 1600</div>
-                        <form action="CartServlet" method="post" class="add-to-cart-form">
-                            <input type="hidden" name="productId" value="12"/>
+                        <form action="${pageContext.request.contextPath}/addToCart" method="post" class="add-to-cart-form">
+                            <input type="hidden" name="productId" value="80"/>
+                            <input type="hidden" name="quantity" value="1"/>
                             <div class="product-sizes">
                                 <select name="size" required>
                                     <option value="">Select size</option>
@@ -183,6 +189,8 @@
                         </form>
                     </div>
                 </div>
+            </div>
+        </div>
     </section>
 
     <div class="pagination">

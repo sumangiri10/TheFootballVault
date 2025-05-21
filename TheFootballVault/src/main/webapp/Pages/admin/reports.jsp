@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reports - The Football Vault Admin</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/CSS/admin.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 <body>
     <div class="admin-container">
@@ -41,16 +42,11 @@
                     </a>
                 </li>
                 <li>
-                    <a href="${pageContext.request.contextPath}/Pages/admin/reports.jsp">
+                    <a href="${pageContext.request.contextPath}/Pages/admin/orders.jsp">
                         <i class="fas fa-shopping-cart"></i>
                         <span>Orders</span>
                     </a>
                 </li>
-                <li>
-                    <a href="${pageContext.request.contextPath}/Pages/admin/users.jsp">
-                        <i class="fas fa-users"></i>
-                        <span>Users</span>
-                    </a>
                 </li>
                 <li class="active">
                     <a href="${pageContext.request.contextPath}/Pages/admin/reports.jsp">
@@ -82,36 +78,7 @@
                     <p>View sales and performance reports</p>
                 </div>
             </div>
-            
-            <!-- Filter Section -->
-            <div class="filter-container">
-                <div class="filter-group">
-                    <span class="filter-label">Date Range:</span>
-                    <select class="filter-select">
-                        <option value="today">Today</option>
-                        <option value="yesterday">Yesterday</option>
-                        <option value="last7days">Last 7 Days</option>
-                        <option value="last30days" selected>Last 30 Days</option>
-                        <option value="thismonth">This Month</option>
-                        <option value="lastmonth">Last Month</option>
-                        <option value="custom">Custom Range</option>
-                    </select>
-                </div>
-                <div class="filter-group">
-                    <span class="filter-label">Category:</span>
-                    <select class="filter-select">
-                        <option value="">All Categories</option>
-                        <option value="premier-league">Premier League</option>
-                        <option value="la-liga">La Liga</option>
-                        <option value="serie-a">Serie A</option>
-                        <option value="football-boots">Football Boots</option>
-                        <option value="retro">Retro Jerseys</option>
-                    </select>
-                </div>
-                <button class="filter-btn">Generate Report</button>
-                <button class="filter-btn" style="background-color: #36b9cc;"><i class="fas fa-download"></i> Export</button>
-            </div>
-            
+
             <!-- Sales Overview -->
             <div class="dashboard-row">
                 <div class="dashboard-card full-width">
@@ -162,7 +129,7 @@
                             <div class="category-item">
                                 <div class="category-color" style="background-color: #1cc88a;"></div>
                                 <div class="category-info">
-                                    <h4>Football Boots</h4>
+                                    <h4>Retro Jersey</h4>
                                     <div class="progress-bar">
                                         <div class="progress" style="width: 30%; background-color: #1cc88a;"></div>
                                     </div>
@@ -172,7 +139,7 @@
                             <div class="category-item">
                                 <div class="category-color" style="background-color: #36b9cc;"></div>
                                 <div class="category-info">
-                                    <h4>Training Gear</h4>
+                                    <h4>Kids Jersey</h4>
                                     <div class="progress-bar">
                                         <div class="progress" style="width: 15%; background-color: #36b9cc;"></div>
                                     </div>
@@ -182,7 +149,7 @@
                             <div class="category-item">
                                 <div class="category-color" style="background-color: #f6c23e;"></div>
                                 <div class="category-info">
-                                    <h4>Accessories</h4>
+                                    <h4>Football Boots</h4>
                                     <div class="progress-bar">
                                         <div class="progress" style="width: 10%; background-color: #f6c23e;"></div>
                                     </div>
@@ -215,11 +182,11 @@
                                 <tr>
                                     <td>
                                         <div style="display: flex; align-items: center;">
-                                            <img src="/placeholder.svg?height=30&width=30" alt="Product" class="product-thumbnail">
-                                            <span style="margin-left: 10px;">Manchester United Home Jersey 2024/25</span>
+                                            <img src="${pageContext.request.contextPath}/Images/laliga/barca-home.jpg" alt="Product" class="product-thumbnail">
+                                            <span style="margin-left: 10px;">Barcelona Home Jersey 2024/25</span>
                                         </div>
                                     </td>
-                                    <td>Premier League</td>
+                                    <td>La Liga</td>
                                     <td>42</td>
                                     <td>₹63,000</td>
                                     <td>33.6%</td>
@@ -227,11 +194,11 @@
                                 <tr>
                                     <td>
                                         <div style="display: flex; align-items: center;">
-                                            <img src="/placeholder.svg?height=30&width=30" alt="Product" class="product-thumbnail">
-                                            <span style="margin-left: 10px;">Barcelona Home Jersey 2024/25</span>
+                                            <img src="${pageContext.request.contextPath}/Images/pl/united-home.jpg" alt="Product" class="product-thumbnail">
+                                            <span style="margin-left: 10px;">Manchester United Home Jersey 2024/25</span>
                                         </div>
                                     </td>
-                                    <td>La Liga</td>
+                                    <td>Premier League</td>
                                     <td>35</td>
                                     <td>₹52,500</td>
                                     <td>28.0%</td>
@@ -239,8 +206,8 @@
                                 <tr>
                                     <td>
                                         <div style="display: flex; align-items: center;">
-                                            <img src="/placeholder.svg?height=30&width=30" alt="Product" class="product-thumbnail">
-                                            <span style="margin-left: 10px;">Nike Mercurial Vapor 15</span>
+                                            <img src="${pageContext.request.contextPath}/Images/boots/product-1.jpg" alt="Product" class="product-thumbnail">
+                                            <span style="margin-left: 10px;">Nivia Airstrike Football Shoes</span>
                                         </div>
                                     </td>
                                     <td>Football Boots</td>
@@ -251,11 +218,11 @@
                                 <tr>
                                     <td>
                                         <div style="display: flex; align-items: center;">
-                                            <img src="/placeholder.svg?height=30&width=30" alt="Product" class="product-thumbnail">
-                                            <span style="margin-left: 10px;">Arsenal Away Jersey 2024/25</span>
+                                            <img src="${pageContext.request.contextPath}/Images/laliga/realmadrid-away.jpg" alt="Product" class="product-thumbnail">
+                                            <span style="margin-left: 10px;">Real Madrid Jersey 2024/25</span>
                                         </div>
                                     </td>
-                                    <td>Premier League</td>
+                                    <td>La Liga</td>
                                     <td>15</td>
                                     <td>₹22,500</td>
                                     <td>12.0%</td>
@@ -263,7 +230,7 @@
                                 <tr>
                                     <td>
                                         <div style="display: flex; align-items: center;">
-                                            <img src="/placeholder.svg?height=30&width=30" alt="Product" class="product-thumbnail">
+                                            <img src="${pageContext.request.contextPath}/Images/seriea/acmilan-home.jpg" alt="Product" class="product-thumbnail">
                                             <span style="margin-left: 10px;">AC Milan Home Jersey 2024/25</span>
                                         </div>
                                     </td>

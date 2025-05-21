@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/* Cart Page Styles */
+.cart-page {
+    padding: 20px 0 60px;
+    background-color: #eeeee4;
+}
+
+.cart-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+}
+
+.cart-main {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+}
+
+.member-section {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.member-link {
+    text-decoration: none;
+    color: #e28743;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.member-link:hover {
+    color: #e28743;
+}
+
+.cart-content {
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.cart-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.cart-message {
+    font-size: 16px;
+    color: #666;
+}
+
+.continue-link {
+    color: #e28743;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.continue-link:hover {
+    color: #5d4700;
+    text-decoration: underline;
+}
+
+/* Order Summary Styles */
+.order-summary {
+    width: 350px;
+    background-color: #21130d; 
+    color: white;
+}
+
+.summary-content {
+    padding: 20px;
+}
+
+.summary-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.item-count {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.view-cart {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.view-cart:hover {
+    text-decoration: underline;
+}
+
+.summary-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-top: 1px solid #333;
+}
+
+.summary-label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.summary-value {
+    font-size: 14px;
+}
+
+.total {
+    margin-top: 10px;
+    padding-top: 20px;
+    border-top: 2px solid #333;
+}
+
+.total .summary-label,
+.total .summary-value {
+    font-size: 16px;
+    font-weight: 700;
+}
